@@ -1,10 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import './main.sass'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+
+export default function Detalje() {
+  return (
+    <div>
+      <img src="/Animal.svg" alt="Cat" />
+      <h1>My pets</h1>
+      <p>Taking care of a pet is my favorite, it helps me to gaimr stress and fatigue</p>
+    </div>
+  );
+}
+    
