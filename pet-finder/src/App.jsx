@@ -1,12 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Onboarding from "./home.jsx";
+import Details from "./Details.jsx";
+import "./first.scss";
 
-export default function Detalje() {
+export default function App() {
   return (
-    <div>
-      <img src="/Animal.svg" alt="Cat" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Onboarding />} />
+        <Route path="/details" element={<Details />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+
+
+
